@@ -1,16 +1,16 @@
 # Airlines-Site
 
-#Implement the website of an airline.
+Implement the website of an airline.
 
-#Main Goal
+Main Goal:
 
-•Implement a website
+  •Implement a website
 
-•Create pages with HTML
+  •Create pages with HTML
 
-•Create a Base with PostgreSQL's 
+  •Create a Base with PostgreSQL's 
 
-•Connect,write and save to Database with PHP
+  •Connect,write and save to Database with PHP
 
 
 #
