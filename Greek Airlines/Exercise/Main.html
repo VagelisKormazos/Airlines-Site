@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head><title> Greek Airlines</title>
+        <style>
+        h1 {text-align: center;font-size:40pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD;
+        letter-spacing:2.5pt}
+
+        h2 {text-align: center;font-size:40pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD;
+        letter-spacing:2.5pt}
+
+        p {text-align: center;}
+
+        li {font-size:12pt; font-size:25pt; font-family:Georgia; background-color:yellow}
+        b:link {color:#FDFDFD} /* unvisited link */
+        b:visited {color:gray} /* visited link */
+        b:hover {color:black; font-style:italic;}
+        .scrollmenu{
+          text-align: center;
+          font-size:30pt;
+          color:#FDFDFD;
+          font-family:Georgia;
+          display: block;
+          padding: 20px;
+          background-color:#33AEFF;
+          }/* mouse over link */
+          a:link {color:#FDFDFD} /* unvisited link */
+          a:visited {color:gray} /* visited link */
+          a:hover {color:black; font-style:italic;}
+          .scrollmenu{
+            text-align: center;
+            font-size:30pt;
+            color:#FDFDFD;
+            font-family:Georgia;
+            display: block;
+            padding: 20px;
+            background-color:#33AEFF;
+            }/
+        .center {
+          width:50%
+
+          border-collapse: collapse;
+          margin-left: auto;
+          margin-right: auto;
+          font-size:20pt;
+          text-align: center;
+
+        }
+
+
+
+
+        tr:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even),td:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+        #myBtn {
+          display: none; /* Hidden by default */
+          position: fixed; /* Fixed/sticky position */
+          bottom: 20px; /* Place the button at the bottom of the page */
+          right: 30px; /* Place the button 30px from the right */
+          z-index: 99; /* Make sure it does not overlap */
+          border: none; /* Remove borders */
+          outline: none; /* Remove outline */
+          background-color: red; /* Set a background color */
+          color: white; /* Text color */
+          cursor: pointer; /* Add a mouse pointer on hover */
+          padding: 15px; /* Some padding */
+          border-radius: 10px; /* Rounded corners */
+          font-size: 18px; /* Increase font size */
+        }
+
+        #myBtn:hover {
+          background-color: #555; /* Add a dark-grey background on hover */
+        }
+
+          #tab{width:100%;}
+        @media screen and (orientation: portrait) and (max-width:980px) {
+          h1 {text-align: center;font-size:40pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD; width:154%;
+              letter-spacing:2.5pt}
+
+          h2 {text-align: center;font-size:28pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD; width:154%;
+              letter-spacing:2.5pt}
+          hr{width:154%;}
+          p {text-align: center;width:154%;}
+          .scrollmenu{
+            text-align: center;
+            font-size:30pt;
+            color:#FDFDFD;
+            font-family:Georgia;
+            display: block;
+            padding: 20px;
+            background-color:#33AEFF;
+            width:150%
+            }/
+          .center {
+          border-collapse: collapse;
+          margin-left: auto;
+          margin-right: auto;
+          font-size:20pt;
+          text-align: center;
+          }
+          tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+          }
+
+          th:nth-child(even),td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+
+          }
+
+          #Air{width:154%;}
+          #flights{width:154%;}
+          #A{width:154%;}
+          #tab{width:154%;}
+        }
+        @media screen and (orientation: landscape) and (max-width:1180px) {
+          h1 {text-align: center;font-size:40pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD; width:154%;
+              letter-spacing:2.5pt}
+
+          h2 {text-align: center;font-size:28pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD; width:154%;
+              letter-spacing:2.5pt}
+          hr{width:154%;}
+          p {text-align: center;width:154%;}
+          .scrollmenu{
+            text-align: center;
+            font-size:30pt;
+            color:#FDFDFD;
+            font-family:Georgia;
+            display: block;
+            padding: 20px;
+            background-color:#33AEFF;
+            width:151%
+            }/
+          .center {
+          border-collapse: collapse;
+          margin-left: auto;
+          margin-right: auto;
+          font-size:20pt;
+          text-align: center;
+          }
+          tr:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+          }
+
+          th:nth-child(even),td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+
+          }
+
+          #Air{width:154%;}
+          #flights{width:154%;}
+          #A{width:154%;}
+          #tab{width:154%;}
+        }
+        </style>
+    </head>
+<body>
+  <h1> Greek Airlines</h1>
+  <div class="scrollmenu"width="100%">
+    <a href="#flights" class="btn">Flights</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#greece-map" class="btn">Map</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#Weather" ><a href="https://www.meteo.gr/index-en.cfm" target="_blank" color="FDFDFD">Weather</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="#contact" >Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#about"><a href="About.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="#Save"><a href="Save.html">Save</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <img id="Air"src="Airplanes.jpg" alt="Airplanes" width="100%" >
+  <br><br><br><br><br><br><br><br><br>
+  <hr style="text-align:left;margin-left:0" >
+  <br><br><br>
+  <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Athens &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Crete &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thessaloniki</h1>
+
+  <map name="greece" id="#greece-map" place="center">
+  <area href="https://www.visitgreece.gr/mainland/attica/athens/" target="_blank" alt="Image map" shape="rect" coords="0,0,620,660">
+  <area href="https://www.visitgreece.gr/islands/crete/" target="_blank" alt="Image map" shape="rect" coords="626,0,1150,660">
+  <area href="https://thessaloniki.travel/"  target="_blank"alt="Image map " shape="rect" coords="1155,0,1680,660">
+  </map>
+  <img id="A" src="A.jpg" alt="Image map" usemap="#greece" width="100%">
+  <br><br><br><br><br><br>
+  <hr style="text-align:left;margin-left:0" >
+  <br><br><br>
+  <h2 id="flights" place= "center">Οur company makes the following flights daily</h2>
+  <br><br><br>
+  <table id="tab" class="center"  >
+    <tr></tr>
+      <td><b>Flight id</b></td>
+      <td><b>From </b></td>
+      <td><b>To</b></td>
+      <td><b>Departure</b></td>
+      <td><b>Arrival</b></td>
+    <tr></tr>
+      <td>AC0001</td>
+      <td>Athens</td>
+      <td>Thessaloniki</td>
+      <td>08:00</td>
+      <td>08:40</td>
+    <tr></tr>
+      <td>CT0002</td>
+      <td>Thessaloniki</td>
+      <td>Crete</td>
+      <td>09:20</td>
+      <td>10:00</td>
+    <tr></tr>
+      <td>TA0003</td>
+      <td>Crete</td>
+      <td>Athens</td>
+      <td>11:00</td>
+      <td>11:35</td>
+  </table>
+  <br><br><br><br><br><br><br><br><br>
+  <hr style="text-align:left;margin-left:0" >
+  <br><br><br>
+  <p style="font-size:30pt">Check the latest news about  <a href="https://www.visitgreece.gr/before-travelling-to-greece/covid-19/" style="color:red" target="_blank">COVID-19</a> in Greece</p>
+  <br><br>
+  <hr style="text-align:left;margin-left:0" >
+  <h2 id="greece-map" place= "center">This is the map of Greece</h2>
+  <p style="font-size:20pt">Right click on place that you want to inform.</p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <map name="greece-map" >
+  <area href="https://www.visitgreece.gr/mainland/attica/athens/" target="_blank" alt="Image map test" shape="rect" coords="693,609,775,740">
+  <area href="https://thessaloniki.travel/" target="_blank" alt="Image map test" shape="circle" coords="639,258,50">
+  <area href="https://www.visitgreece.gr/islands/crete/" target="_blank" alt="Image map test" shape="poly" coords="724,1027,1045,1082,1247,1143,710,1135">
+  </map>
+
+  <img src="greece-map.png" alt="Image map test" usemap="#greece-map" >
+
+
+  <br><br><br><br><br><br><br><br><br>
+
+  <hr style="text-align:left;margin-left:0" >
+
+  <h2 id="contact" >Send an e-mail:</h2>
+
+  <form action="mailto: kormazos.v@gmail.com" method="post" enctype="text/plain">
+  Name:<br>
+  <input type="text" name="name"><br>
+  E-mail:<br>
+  <input type="text" name="mail"><br>
+  Comment:<br>
+  <input type="text" name="comment" size="50"><br><br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+  </form>
+  <hr style="width:100%;text-align:left;margin-left:0" >
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Insert & Find Data</title>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title> Greek Airlines</title>
+        <style>
+        h1 {text-align: center;font-size:40pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD;
+        letter-spacing:2.5pt}
+
+        h2 {text-align: center;font-size:40pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD;
+        letter-spacing:2.5pt}
+
+        p {text-align: center;}
+
+        legend{text-align: center;text-align: center;font-size:40pt; font-family:Georgia; color:#33AEFF; background-color:#FDFDFD;
+        letter-spacing:2.5pt}
+
+        label{font-size:15pt; font-family:Georgia;}
+
+        fieldset{border-color: #33AEFF;}
+
+        li {font-size:12pt; font-size:25pt; font-family:Georgia; background-color:yellow}
+        b:link {color:#FDFDFD} /* unvisited link */
+        b:visited {color:gray} /* visited link */
+        b:hover {color:black; font-style:italic;}
+        .scrollmenu{
+          text-align: center;
+          font-size:30pt;
+          color:#FDFDFD;
+          font-family:Georgia;
+          display: block;
+          padding: 20px;
+          background-color:#33AEFF;
+          }/* mouse over link */
+          a:link {color:#FDFDFD} /* unvisited link */
+          a:visited {color:gray} /* visited link */
+          a:hover {color:black; font-style:italic;}
+          .scrollmenu{
+            text-align: center;
+            font-size:30pt;
+            color:#FDFDFD;
+            font-family:Georgia;
+            display: block;
+            padding: 20px;
+            background-color:#33AEFF;
+            }/
+        .center {
+          width:50%
+
+          border-collapse: collapse;
+          margin-left: auto;
+          margin-right: auto;
+          font-size:20pt;
+          text-align: center;
+
+        }
+        tr:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even),td:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+        #myBtn {
+          display: none; /* Hidden by default */
+          position: fixed; /* Fixed/sticky position */
+          bottom: 20px; /* Place the button at the bottom of the page */
+          right: 30px; /* Place the button 30px from the right */
+          z-index: 99; /* Make sure it does not overlap */
+          border: none; /* Remove borders */
+          outline: none; /* Remove outline */
+          background-color: red; /* Set a background color */
+          color: white; /* Text color */
+          cursor: pointer; /* Add a mouse pointer on hover */
+          padding: 15px; /* Some padding */
+          border-radius: 10px; /* Rounded corners */
+          font-size: 18px; /* Increase font size */
+        }
+
+        #myBtn:hover {
+          background-color: #555; /* Add a dark-grey background on hover */
+        }
+        #reset{
+          text-align: center;
+
+        }
+        .text-center {
+          text-align: center;
+          font-size: 8px;
+        }
+        </style>
+  </head>
+  <body>
+    <h1> Greek Airlines</h1>
+     <div class="scrollmenu">
+      <a href="#Main"><a href="Main.html">Main</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a href="#Weather" ><a href="https://www.meteo.gr/index-en.cfm" target="_blank" color="FDFDFD">Weather</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a href="#about"><a href="About.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      <a href="#Save"><a href="Save.html">Save</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <img src="Airplanes.jpg" alt="Airplanes" width="100%" >
+
+    <form id="insert" class="insert" action="http://localhost/php_labs/Exam_Exercise/Insert.php" target="_blank" method="post" name="insert" >
+      <fieldset><legend >Personals Data</legend>
+      <p>
+      <label for="firstname1" >Name:</label>
+      <input type="text" id="f" name="firstname1" placeholder="Fill in with Latin characters">
+      <p>
+      <label for="Surname1">Surname:</label>
+      <input type="text" id="Surname1" name="Surname1" placeholder="Fill in with Latin characters">
+      <p>
+      <label for="Address1">Address:</label>
+      <input type="text" id="Address1" name="Address1" placeholder="Fill in with Latin characters">
+      <p>
+      <label for="Email1">Email:</label>
+      <input type="email" id="Email1" name="Email1">
+      <p>
+      <label for="Password1">Password:</label>
+      <input type="Password1" id="Password1" name="Password1">
+      <p>
+      <label for="Country1">Country:</label>
+        <select id="Country1" name="Country1">
+         <option ></option>
+         <option >UK</option>
+         <optgroup label="Greece">
+           <option>Athens</option>
+           <option>Crete</option>
+           <option>Thessalonili</option>
+         </optgroup>
+         <option>Italy</option>
+         <option>France</option>
+         <option>German</option>
+         <option>Rusia</option>
+         </select>
+      <p>
+      <label for="ZipCode1">Zip Code:</label>
+      <input type="number" id="ZipCode1" name="ZipCode1" >
+      <p>
+      <label for="Telephone1">Telephone number:</label>
+      <input type="number" id="Telephone1" name="Telephone1" placeholder="210xxxxxxx">
+      <p>
+      <label for="CardNumber1">Card Number:</label>
+      <input type="number" id="CardNumber1" name="CardNumber1" >
+      <p>
+      <label  for="CardType1">Card Type:</label> <select id="CardType1" name="CardType1" >
+         <option ></option>
+         <option >Visa </option>
+         <option>Mastercard </option>
+         <option>Other Choice </option>
+      </select>
+      <p>
+     <label for="Sex1">Gender:</label>
+
+      Male <input type="radio" id="qhtmly" name="payment" value="Male" font-size:20pt; font-family:Georgia;>
+      Female <input type="radio" id="qhtmln" name="payment" value="Female">
+      <h2></h2>
+      <div class="text-center">
+     <input type="button"  value="Print" onclick="window.print();return false;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input id="reset" type="reset" value="Reset" onclick=alert("Done!!!")>&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input id="submt" type="submit" value="Save" onclick="check()" >
+     <p id="errors" style="color:red;"></p>
+     </div>
+       <script>
+       function check(){
+         let ok=0;
+         firstname=document.getElementById("f").value;
+         if(/^[A-Za-z]+$/.test(firstname)){
+           ok=ok+1;
+         }else{
+         alert("Fill the Name with Latin characters");
+         document.getElementById("f").style="border:2px solid red;";
+         document.getElementById("errors").innerText="";
+         document.getElementById("errors").innerText="This box has wrong values";
+         }
+
+         Surn=document.getElementById("Surname1").value;
+         if(/^[A-Za-z]+$/.test(Surn)){
+           ok=ok+1;
+         }else{
+         alert("Fill the Surname with Latin characters");
+         document.getElementById("Surname1").style="border:2px solid red;";
+         document.getElementById("errors").innerText="";
+         document.getElementById("errors").innerText="This box has wrong values";
+         }
+
+         Eml=document.getElementById("Email1").value;
+         if (/[\w._.]+@[\w.]+\.[a-zA-Z]{1,5}$/.test(Eml))
+         {
+           ok=ok+1;
+         }else{
+         alert("Wrong Email");
+         document.getElementById("Email1").style="border:2px solid red;";
+         document.getElementById("errors").innerText="";
+         document.getElementById("errors").innerText="This box has wrong values";
+         }
+
+         var Zip=document.getElementById("ZipCode1").value;
+         if(Zip>99999){
+           alert("The Zip Code has 5 digits");
+           document.getElementById("ZipCode1").style="border:2px solid red;";
+           document.getElementById("errors").innerText="";
+           document.getElementById("errors").innerText="This box has wrong values";
+         }else{
+           ok=ok+1;
+         }
+
+
+         var CardN=document.getElementById("CardNumber1").value;
+         if (/^[0-9].{15}$/.test(CardN)){
+           ok=ok+1;
+         }else{
+           alert("The Card Number has 16 digits");
+           document.getElementById("CardNumber1").style="border:2px solid red;";
+           document.getElementById("errors").innerText="";
+           document.getElementById("errors").innerText="This box has wrong values";
+         }
+
+         var phone=document.getElementById("Telephone1").value;
+         if(phone<=2100000000  ){
+           alert("The Telephone number must start with 210xxxxxxx");
+           document.getElementById("Telephone1").style="border:2px solid red;";
+           document.getElementById("errors").innerText="";
+           document.getElementById("errors").innerText="This box has wrong values";
+         }else{
+
+         if(phone>=2109999999 ){
+           alert("The Telephone number must start with 210xxxxxxx");
+           document.getElementById("Telephone1").style="border:2px solid red;";
+           document.getElementById("errors").innerText="";
+           document.getElementById("errors").innerText="This box has wrong values";
+         }else{
+           ok=ok+1;
+         }
+       }
+
+         if(ok==6  ){
+           alert("Saved")
+         }
+     }
+       </script>
+      </form>
+     </fieldset>
+       <fieldset><legend>Find your data </legend>
+         <form id="search" class="search" action="http://localhost/php_labs/Exam_Exercise/Search.php" target="_blank" method="post" name="search" >
+       <p>
+       <label for="search_email" >Insert your Email:</label>
+       <input type="text" name="search_email" placeholder="Fill in with Latin characters">
+
+       <p>
+       <label for="search_password" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert your Password:</label>
+       <input type="text" name="search_password" >
+       <button type="submit" >Sumbit <i class="fa fa-search"></i></button>
+      </fieldset>
+    </form>
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+--CREATE DATABASE Personal_1;
+
+CREATE TABLE me(
+name varchar(30)  primary key,
+surname varchar(30),
+address varchar(30),
+email varchar(50),
+password varchar(30),
+country varchar(30),
+zip_code numeric(5),
+telephone numeric(10),
+card_number numeric(16),
+card_type varchar(20),
+gender varchar(6)
+);
+
+INSERT INTO me(name, surname, address, email, password, country, zip_code, telephone, card_number, card_type, gender)
+VALUES ('Nikos', 'Papadopoulos','kilkis','nikpap@gmail.com','35100','America','35100','2102563147','1600123645694567','Visa','Male') ;
+
+--select *from me;
